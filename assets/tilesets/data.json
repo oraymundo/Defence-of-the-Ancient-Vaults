@@ -1,0 +1,513 @@
+{
+  "characters": [
+    {
+      "name": "Ghost",
+      "player": false
+    },
+    {
+      "name": "Blue",
+      "player": true
+    },
+    {
+      "name": "Green",
+      "player": true
+    },
+    {
+      "name": "Blue Hat",
+      "player": true
+    },
+    {
+      "name": "Boy",
+      "player": true
+    },
+    {
+      "name": "White",
+      "player": true
+    },
+    {
+      "name": "Barkeep",
+      "player": true
+    },
+    {
+      "name": "Sol",
+      "player": true
+    },
+    {
+      "name": "Witch",
+      "player": true
+    }
+  ],
+  "monsters": [
+    {
+      "name": "Shade",
+      "player": false,
+      "npc": {
+        "hostile_day": false,
+        "hostile_night": false,
+        "spawn_day": true,
+        "spawn_night": false,
+        "despawn_day": false,
+        "despawn_night": true,
+        "corruption_only": false
+      }
+    },
+    {
+      "name": "Skeleton",
+      "player": false,
+      "npc": {
+        "hostile_day": false,
+        "hostile_night": true,
+        "spawn_day": false,
+        "spawn_night": true,
+        "despawn_day": true,
+        "despawn_night": false,
+        "corruption_only": false
+      }
+    },
+    {
+      "name": "Goblin",
+      "player": false,
+      "npc": {
+        "hostile_day": true,
+        "hostile_night": false,
+        "spawn_day": true,
+        "spawn_night": false,
+        "despawn_day": false,
+        "despawn_night": false,
+        "corruption_only": false
+      }
+    },
+    {
+      "name": "Imp",
+      "player": false,
+      "npc": {
+        "hostile_day": true,
+        "hostile_night": false,
+        "spawn_day": true,
+        "spawn_night": false,
+        "despawn_day": false,
+        "despawn_night": false,
+        "corruption_only": false
+      }
+    },
+    {
+      "name": "Genie",
+      "player": false,
+      "npc": {
+        "hostile_day": true,
+        "hostile_night": false,
+        "spawn_day": true,
+        "spawn_night": false,
+        "despawn_day": false,
+        "despawn_night": false,
+        "corruption_only": false
+      }
+    },
+    {
+      "name": "Succubus",
+      "player": false,
+      "npc": {
+        "hostile_day": true,
+        "hostile_night": false,
+        "spawn_day": true,
+        "spawn_night": false,
+        "despawn_day": false,
+        "despawn_night": false,
+        "corruption_only": false
+      }
+    },
+    {
+      "name": "Reaper",
+      "player": false,
+      "npc": {
+        "hostile_day": true,
+        "hostile_night": false,
+        "spawn_day": true,
+        "spawn_night": false,
+        "despawn_day": false,
+        "despawn_night": false,
+        "corruption_only": false
+      }
+    },
+    {
+      "name": "Viking",
+      "player": false,
+      "npc": {
+        "hostile_day": false,
+        "hostile_night": true,
+        "spawn_day": false,
+        "spawn_night": true,
+        "despawn_day": false,
+        "despawn_night": true,
+        "corruption_only": true
+      }
+    }
+  ],
+  "inventory": [
+    {
+      "name": "Stone"
+    },
+    {
+      "name": "Wood"
+    },
+    {
+      "name": "Water"
+    },
+    {
+      "name": "Sand"
+    },
+    {
+      "name": "Copper Ore"
+    },
+    {
+      "name": "Iron Ore"
+    },
+    {
+      "name": "Silver Ore"
+    },
+    {
+      "name": "Gold Ore"
+    },
+    {
+      "name": "Cobalt Ore"
+    }
+  ],
+  "terrain": [
+    {
+      "name": "Grass",
+      "mineable": false,
+      "provides": null,
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": true,
+      "becomes": null,
+      "spawn_npc": true
+    },
+    {
+      "name": "Dirt",
+      "mineable": false,
+      "provides": null,
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": true,
+      "becomes": null,
+      "spawn_npc": true
+    },
+    {
+      "name": "Sand",
+      "mineable": true,
+      "provides": {
+        "id": 3,
+        "quantity": 1
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": true,
+      "becomes": 1,
+      "spawn_npc": true
+    },
+    {
+      "name": "Water",
+      "mineable": false,
+      "provides": null,
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": null,
+      "spawn_npc": false
+    },
+    {
+      "name": "Tree",
+      "mineable": true,
+      "provides": {
+        "id": 1,
+        "quantity": 2
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 5,
+      "threshold": 10,
+      "spawn_npc": false
+    },
+    {
+      "name": "Stump",
+      "mineable": true,
+      "provides": {
+        "id": 1,
+        "quantity": 1
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 0,
+      "threshold": 0,
+      "spawn_npc": false
+    },
+    {
+      "name": "Big Stone",
+      "mineable": true,
+      "provides": {
+        "id": 0,
+        "quantity": 2
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 7,
+      "threshold": 10,
+      "spawn_npc": false
+    },
+    {
+      "name": "Little Stone",
+      "mineable": true,
+      "provides": {
+        "id": 0,
+        "quantity": 1
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": false,
+      "becomes": 8,
+      "threshold": 0,
+      "spawn_npc": false
+    },
+    {
+      "name": "Rubble",
+      "mineable": true,
+      "provides": {
+        "id": 0,
+        "quantity": 1
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": true,
+      "becomes": 1,
+      "spawn_npc": true
+    },
+    {
+      "name": "Wood Wall",
+      "mineable": true,
+      "provides": {
+        "id": 1,
+        "quantity": 4
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 1,
+      "spawn_npc": false,
+      "synthetic": true
+    },
+    {
+      "name": "Wood Floor",
+      "mineable": true,
+      "provides": {
+        "id": 1,
+        "quantity": 2
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": true,
+      "becomes": 1,
+      "spawn_npc": false,
+      "synthetic": true
+    },
+    {
+      "name": "Brick Wall",
+      "mineable": true,
+      "provides": {
+        "id": 0,
+        "quantity": 4
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 1,
+      "spawn_npc": false,
+      "synthetic": true
+    },
+    {
+      "name": "Brick Floor",
+      "mineable": true,
+      "provides": {
+        "id": 0,
+        "quantity": 2
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": true,
+      "becomes": 1,
+      "spawn_npc": false,
+      "synthetic": true
+    },
+    {
+      "name": "Door",
+      "mineable": true,
+      "provides": {
+        "id": 1,
+        "quantity": 12
+      },
+      "block_player": false,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 1,
+      "spawn_npc": false,
+      "synthetic": true
+    },
+    {
+      "name": "Glass",
+      "mineable": true,
+      "provides": {
+        "id": 3,
+        "quantity": 4
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 1,
+      "spawn_npc": false,
+      "synthetic": true
+    },
+    {
+      "name": "Big Copper Vein",
+      "mineable": true,
+      "provides": {
+        "id": 4,
+        "quantity": 2
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 16,
+      "threshold": 10,
+      "spawn_npc": false
+    },
+    {
+      "name": "Small Copper Vein",
+      "mineable": true,
+      "provides": {
+        "id": 4,
+        "quantity": 1
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": false,
+      "becomes": 8,
+      "threshold": 0,
+      "spawn_npc": false
+    },
+    {
+      "name": "Big Iron Vein",
+      "mineable": true,
+      "provides": {
+        "id": 5,
+        "quantity": 2
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 18,
+      "threshold": 10,
+      "spawn_npc": false
+    },
+    {
+      "name": "Small Iron Vein",
+      "mineable": true,
+      "provides": {
+        "id": 5,
+        "quantity": 1
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": false,
+      "becomes": 8,
+      "threshold": 0,
+      "spawn_npc": false
+    },
+    {
+      "name": "Big Silver Vein",
+      "mineable": true,
+      "provides": {
+        "id": 6,
+        "quantity": 2
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 20,
+      "threshold": 10,
+      "spawn_npc": false
+    },
+    {
+      "name": "Small Silver Vein",
+      "mineable": true,
+      "provides": {
+        "id": 6,
+        "quantity": 1
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": false,
+      "becomes": 8,
+      "threshold": 0,
+      "spawn_npc": false
+    },
+    {
+      "name": "Big Gold Vein",
+      "mineable": true,
+      "provides": {
+        "id": 7,
+        "quantity": 2
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 22,
+      "threshold": 10,
+      "spawn_npc": false
+    },
+    {
+      "name": "Small Gold Vein",
+      "mineable": true,
+      "provides": {
+        "id": 7,
+        "quantity": 1
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": false,
+      "becomes": 8,
+      "threshold": 0,
+      "spawn_npc": false
+    },
+    {
+      "name": "Big Cobalt Vein",
+      "mineable": true,
+      "provides": {
+        "id": 8,
+        "quantity": 2
+      },
+      "block_player": true,
+      "block_npc": true,
+      "replaceable": false,
+      "becomes": 24,
+      "threshold": 10,
+      "spawn_npc": false
+    },
+    {
+      "name": "Small Cobalt Vein",
+      "mineable": true,
+      "provides": {
+        "id": 8,
+        "quantity": 1
+      },
+      "block_player": false,
+      "block_npc": false,
+      "replaceable": false,
+      "becomes": 8,
+      "threshold": 0,
+      "spawn_npc": false
+    }
+  ]
+}
